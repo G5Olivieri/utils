@@ -3,10 +3,13 @@ up:
 
 down:
 	docker-compose kill
-	docker-compose rm -f 
+	docker-compose rm -f
 
 logs:
-	docker-compose ogs -f
+	docker-compose logs -f
 
 shell:
 	docker-compose run --rm app sh
+
+build:
+	docker-compose build
